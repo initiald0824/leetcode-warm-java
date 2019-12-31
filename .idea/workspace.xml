@@ -43,8 +43,8 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
-    <configuration name="Two_Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Two_Sum" />
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TwoSum" />
       <module name="leetcode-java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -52,7 +52,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Two_Sum" />
+        <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577685983801</updated>
       <workItem from="1577685988040" duration="2457000" />
-      <workItem from="1577786114472" duration="1887000" />
+      <workItem from="1577786114472" duration="3747000" />
     </task>
     <servers />
   </component>
@@ -92,6 +92,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="94" key="#Inspections" timestamp="1577788517923">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="94" key="#Inspections/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577788517923" />
     <state x="640" y="231" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577784954113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -116,6 +120,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1867" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577787555851" />
+    <state x="440" y="202" key="IDE.errors.dialog" timestamp="1577788672155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="202" key="IDE.errors.dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577788672155" />
     <state x="330" y="75" key="SettingsEditor" timestamp="1577788003533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
