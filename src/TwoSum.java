@@ -6,7 +6,7 @@ import java.util.Map;
  * @author initiald0824
  * @date 2019/12/31 17:57
  */
-public class Two_Sum {
+public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> record = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -26,7 +26,7 @@ public class Two_Sum {
     public static void main(String[] args) {
         int[] nums = new int[]{3, 2, 4};
         int target = 6;
-        System.out.println(Arrays.toString(new Two_Sum().twoSum(nums, target)));
+        System.out.println(Arrays.toString(new TwoSum().twoSum(nums, target)));
     }
 
 }
