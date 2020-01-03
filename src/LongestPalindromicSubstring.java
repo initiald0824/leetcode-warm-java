@@ -19,4 +19,28 @@
  * @date 2020/1/1 18:58
  */
 public class LongestPalindromicSubstring {
+    public String longestPalindrome(String s) {
+        for (int i = 0; i < s.length(); i++) {
+        }
+        return "";
+    }
+
+    public String getPalindrome(String s, int left, int right) {
+        int cnt = 0, pl = left, pr = right;
+        while (left >=0 && right < s.length()) {
+            if (s.charAt(left) == s.charAt(right)) {
+                left--;
+                right++;
+                cnt++;
+            } else {
+                break;
+            }
+        }
+        return s.substring(pl-cnt, pl) + s.substring(pr, pr+cnt);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new LongestPalindromicSubstring().getPalindrome("babad", 0, 0));
+    }
+
 }
