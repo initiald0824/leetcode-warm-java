@@ -32,9 +32,57 @@ import java.util.*;
  */
 public class FindSubstring {
     public List<Integer> findSubstring(String s, String[] words) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        int len = getWordsLength(words);
+        if (s.length() < len || "".equals(s) || len == 0) {
+            return res;
+        }
+        int wordLen = words[0].length();
+        for (int i = 0; i <= s.length()-len; i++) {
+            if (isMatch(s.substring(i, i+len), words, wordLen)) {
+                res.add(i);
+            }
+        }
+        return res;
     }
 
+    private boolean isMatch(String s, String[] words, int wordLen) {
+        Map<String, Integer> record = new HashMap<>(words.length);
+        int i = 0;
+        while (i <= s.length()-wordLen) {
+            String key = s.substring(i, i+wordLen);
+            if (record.containsKey(key)) {
+                record.put(key, record.get(key)+1);
+            } else {
+                record.put(key, 1);
+            }
+            i += wordLen;
+        }
+        for (String key: words) {
+            if (record.containsKey(key)) {
+                record.put(key, record.get(key)-1);
+            } else {
+                return false;
+            }
+        }
+        for (Map.Entry<String, Integer> entry: record.entrySet()) {
+            if (entry.getValue() != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private int getWordsLength(String[] words) {
+        int len = 0;
+        for (String word: words) {
+            len += word.length();
+        }
+        return len;
+    }
+
+
     public static void main(String[] args) {
+        System.out.println(new FindSubstring().findSubstring("", new String[]{}));
     }
 }
